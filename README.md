@@ -6,16 +6,16 @@ This repo is a guide to workflows using SBOMs with Spin applications.
 
 SBOM stands for Software Bill of Materials. It's a detailed inventory of the components that make up a software application including licenses, dependencies, versions and patch statuses. SBOMs are used to track vulnerabilities, audit software, identify risks and more. Please note that the completeness of an SBOM depends on the tool used to generate it. SBOMs can come in different formats. Cyclonedx and SPDX are two popular formats for SBOMs.
 
-Generating an SBOM for a Spin OCI artifact and periodically having a scanner scan for vulnerabilities can be a good security practice to adopt in an organization or for project(s). This guide outlines two different ways to use SBOMs with Spin OCI artifacts.
+Generating an SBOM for a Spin application in CI, attaching that to the packaged Spin application (OCI artifact) and periodically having a scanner scan for vulnerabilities can be a good security practice to adopt in an organization or for project(s). This guide outlines two different ways to use SBOMs with Spin OCI artifacts.
 
 ## The Tutorial
 
 ### Pre-requisites
 
-1. Download trivy
-2. Download oras
-3. Download cosign
-4. Download the spin CLI and have an example (spin) app. If you don't have one, feel free to use this [triage app](https://github.com/michelleN/triage)!
+1. Download [trivy](https://aquasecurity.github.io/trivy/v0.57/getting-started/installation/) - for generating and scanning SBOMs
+2. Download [oras](https://oras.land/docs/installation/) - CLI for working with OCI registries
+3. Download [cosign](https://docs.sigstore.dev/cosign/system_config/installation/)
+4. Download [spin](https://developer.fermyon.com/spin/v3/install) and have an example (spin) app. If you don't have one, feel free to use this [triage app](https://github.com/michelleN/triage)!
 
 ### Generate an SBOM
 
