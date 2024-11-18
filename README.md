@@ -15,7 +15,7 @@ Generating an SBOM for a Spin application in CI, attaching that to the packaged 
 1. Download [trivy](https://aquasecurity.github.io/trivy/v0.57/getting-started/installation/) - for generating and scanning SBOMs
 2. Download [oras](https://oras.land/docs/installation/) - CLI for working with OCI registries
 3. Download [cosign](https://docs.sigstore.dev/cosign/system_config/installation/)
-4. Download [spin](https://developer.fermyon.com/spin/v3/install) and have an example (spin) app. If you don't have one, feel free to use this [triage app](https://github.com/michelleN/triage)!
+4. Download [spin](https://developer.fermyon.com/spin/v3/install) and have an example (spin) app.
 
 ### Generate an SBOM
 
